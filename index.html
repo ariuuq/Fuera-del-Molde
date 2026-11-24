@@ -4,709 +4,360 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#171315">
-  <meta name="description" content="Fuera del Molde: una experiencia interactiva sobre autonomía moral, presión social, derechos y convivencia.">
-
-  <title>FUERA DEL MOLDE — Piensa. Cuestiona. Decide.</title>
-
+  <meta name="theme-color" content="#551329">
+  <title>FUERA DEL MOLDE — Derechos, igualdad y participación</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
+  <div class="announcement">
+    <span>UNA PLATAFORMA PARA PENSAR, CUESTIONAR Y ACTUAR</span>
+    <span>EDICIÓN 001 · DERECHOS Y CIUDADANÍA</span>
+  </div>
 
-  <div class="reading-progress" id="readingProgress"></div>
-
-  <!-- NAVEGACIÓN -->
-  <header class="navbar" id="navbar">
-    <a href="#inicio" class="logo">
-      <span class="logo-symbol">F.</span>
-      <span>FUERA DEL <b>MOLDE.</b></span>
-    </a>
-
-    <nav class="nav-links" id="navLinks">
+  <header class="site-header">
+    <a class="brand" href="#inicio">FUERA<span>DEL</span>MOLDE<span class="brand-dot">.</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <a href="#derechos">Derechos</a>
+      <a href="#realidad">La realidad</a>
+      <a href="#desigualdad">Desigualdad</a>
+      <a href="#actuar">¿Qué hacer?</a>
       <a href="#explora">Explora</a>
-      <a href="#presion">Presión social</a>
-      <a href="#derechos">Tus derechos</a>
-      <a href="#experimenta">Juega</a>
-      <a href="#reflexiona">Reflexiona</a>
+      <a href="#juego" class="nav-game">Jugar ↗</a>
     </nav>
-
-    <a href="#experimenta" class="nav-cta">PONTE A PRUEBA ↗</a>
-
-    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
-      <span></span><span></span>
-    </button>
   </header>
 
-
   <main>
-
-    <!-- HERO -->
     <section class="hero" id="inicio">
-
-      <div class="hero-decoration hero-circle"></div>
-      <div class="hero-decoration hero-line"></div>
-
-      <div class="hero-content reveal">
-
-        <div class="eyebrow">
-          <span class="live-dot"></span>
-          UNA EXPERIENCIA PARA PENSAR DIFERENTE
-        </div>
-
-        <h1>
-          ¿Y SI DEJARAS<br>
-          DE <span class="italic-word">seguir</span><br>
-          A LOS DEMÁS?
-        </h1>
-
-        <p class="hero-description">
-          Tus decisiones hablan de ti. Tus silencios también.
-          Explora, cuestiona y descubre hasta qué punto piensas
-          por ti mismo.
-        </p>
-
+      <div class="hero-grain"></div>
+      <div class="hero-content">
+        <p class="eyebrow light">NO ES SOLO LO QUE PIENSAS. ES LO QUE HACES.</p>
+        <h1>EL MUNDO NO<br>TIENE QUE SER<br><em>ASÍ.</em></h1>
+        <p class="hero-description">Tus derechos no dependen de tu apariencia, tus ideas, tu origen ni de cuánto encajes. Conocerlos es el primer paso. Defenderlos cambia las cosas.</p>
         <div class="hero-actions">
-          <a href="#explora" class="button-primary">
-            EXPLORAR EXPERIENCIA <span>↗</span>
-          </a>
-          <a href="#experimenta" class="button-text">
-            QUIERO PONERME A PRUEBA ↓
-          </a>
+          <a class="button button-light" href="#derechos">Descubre tus derechos <span>↗</span></a>
+          <a class="text-link light-link" href="#realidad">Conoce la realidad ↓</a>
         </div>
-
-        <div class="hero-bottom">
-          <span>01 / 08 — COMIENZA AQUÍ</span>
-          <span>DESLIZA PARA DESCUBRIR ↓</span>
-        </div>
+        <div class="hero-note"><span class="hero-line"></span> INFORMACIÓN · REFLEXIÓN · PARTICIPACIÓN</div>
       </div>
-
-      <div class="hero-art reveal">
-        <div class="art-frame">
-          <div class="art-top">
-            <span>THINK FOR YOURSELF</span>
-            <span>VOL. 001</span>
-          </div>
-
-          <div class="art-main">
-            <span class="art-small">NO TODO LO QUE HACE LA MAYORÍA...</span>
-            <span class="art-word">ES<br><i>CORRECTO.</i></span>
-            <div class="art-sticker">QUESTION<br>EVERYTHING.</div>
-          </div>
-
-          <div class="art-bottom">
-            <span>ROMPE EL PATRÓN.</span>
-            <span>FDM — 2026</span>
-          </div>
-        </div>
-        <div class="art-caption">UNA INVITACIÓN A PENSAR POR TI MISMO.</div>
-      </div>
-
-    </section>
-
-
-    <!-- FRASE INTERMEDIA -->
-    <section class="statement-section">
-      <div class="statement-number">01 — UNA PREGUNTA</div>
-      <h2>
-        No necesitas estar de acuerdo con todos.
-        Necesitas saber <span>por qué piensas lo que piensas.</span>
-      </h2>
-      <p>Y eso empieza cuestionando lo que parece normal.</p>
-    </section>
-
-
-    <!-- EXPLORA -->
-    <section class="explore-section section-padding" id="explora">
-
-      <div class="section-heading reveal">
-        <div>
-          <span class="section-kicker">02 — CONOCIMIENTO SIN ABURRIMIENTO</span>
-          <h2>Primero, <i>entendamos.</i></h2>
-        </div>
-        <p>
-          Hay cosas que vivimos todos los días sin detenernos
-          a pensar en lo que realmente significan.
-        </p>
-      </div>
-
-      <div class="topic-grid">
-
-        <article class="topic-card topic-large reveal">
-          <div class="topic-card-top">
-            <span>01 / PSICOLOGÍA SOCIAL</span>
-            <span>↗</span>
-          </div>
-          <div class="topic-illustration pressure-illustration">
-            <div class="circle-person">YO</div>
-            <div class="orbit orbit-one"></div>
-            <div class="orbit orbit-two"></div>
-            <span class="orbit-label">EXPECTATIVAS</span>
-            <span class="orbit-label label-two">GRUPO</span>
-          </div>
-          <h3>La presión<br>que no siempre ves.</h3>
-          <p>
-            No toda presión viene de una orden. A veces aparece
-            en una mirada, un silencio o el miedo a quedar fuera.
-          </p>
-          <button class="text-link open-topic" data-topic="pressure">
-            DESCUBRIR EL TEMA ↗
-          </button>
-        </article>
-
-        <article class="topic-card topic-red reveal">
-          <div class="topic-card-top">
-            <span>02 / FILOSOFÍA Y ÉTICA</span>
-            <span>↗</span>
-          </div>
-          <div class="topic-illustration decision-illustration">
-            <div class="decision-word">DECIDE.</div>
-            <div class="decision-arrows">↙ &nbsp; ↗ &nbsp; ↘</div>
-          </div>
-          <h3>Tu criterio.<br>Tu responsabilidad.</h3>
-          <p>
-            Descubre por qué hacer lo correcto no siempre significa
-            hacer lo que los demás esperan.
-          </p>
-          <button class="text-link open-topic" data-topic="autonomy">
-            DESCUBRIR EL TEMA ↗
-          </button>
-        </article>
-
-        <article class="topic-card topic-light reveal">
-          <div class="topic-card-top">
-            <span>03 / SOCIEDAD</span>
-            <span>↗</span>
-          </div>
-          <div class="topic-illustration inclusion-illustration">
-            <span>IN</span><span>CLU</span><span>SIÓN</span>
-          </div>
-          <h3>Lo que normalizamos<br>también importa.</h3>
-          <p>
-            Prejuicios, discriminación y exclusión: aprende a
-            reconocer lo que muchas veces pasa desapercibido.
-          </p>
-          <button class="text-link open-topic" data-topic="discrimination">
-            DESCUBRIR EL TEMA ↗
-          </button>
-        </article>
-
-        <article class="topic-card topic-dark reveal">
-          <div class="topic-card-top">
-            <span>04 / CIUDADANÍA</span>
-            <span>↗</span>
-          </div>
-          <div class="topic-illustration rights-illustration">
-            <span>NO SON<br>FAVORES.</span>
-            <span class="rights-star">✳</span>
-          </div>
-          <h3>Los derechos no<br>se negocian.</h3>
-          <p>
-            Conoce los derechos que protegen tu dignidad y
-            por qué deben respetarse en cualquier circunstancia.
-          </p>
-          <a href="#derechos" class="text-link">EXPLORAR DERECHOS ↗</a>
-        </article>
-
+      <div class="hero-side-text">CUESTIONA LO ESTABLECIDO — 2026</div>
+      <div class="hero-stamp"><span>NO</span><span>TE</span><strong>CALLES.</strong></div>
+      <div class="hero-bottom">
+        <span>01 / 06</span>
+        <span>UNA SOCIEDAD MÁS JUSTA EMPIEZA CON PERSONAS INFORMADAS.</span>
       </div>
     </section>
 
-
-    <!-- MODAL DE INFORMACIÓN -->
-    <div class="modal-overlay" id="topicModal">
-      <div class="modal-box">
-        <button class="modal-close" id="closeTopic" aria-label="Cerrar">×</button>
-        <span class="section-kicker" id="modalKicker">DESCUBRE</span>
-        <h2 id="modalTitle"></h2>
-        <div id="modalContent" class="modal-content"></div>
-        <button class="button-primary" id="modalDone">YA LO ENTENDÍ ↗</button>
-      </div>
-    </div>
-
-
-    <!-- PRESIÓN SOCIAL -->
-    <section class="pressure-section section-padding" id="presion">
-
-      <div class="section-heading reveal">
-        <div>
-          <span class="section-kicker">03 — MÍRALO DE CERCA</span>
-          <h2>La presión social<br>tiene <i>muchas caras.</i></h2>
-        </div>
-        <p>
-          No siempre te dicen qué hacer. A veces te hacen sentir
-          que no tienes otra opción.
-        </p>
-      </div>
-
-      <div class="pressure-feature reveal">
-
-        <div class="pressure-feature-text">
-          <span class="feature-label">SITUACIONES QUE QUIZÁS CONOCES</span>
-          <h3>¿Alguna vez has hecho algo solo para no sentirte diferente?</h3>
-          <p>
-            La necesidad de pertenecer puede influir en nuestras
-            decisiones, incluso cuando estas contradicen nuestros valores.
-          </p>
-          <p>
-            Reconocer esa influencia no significa rechazar a tus amigos.
-            Significa aprender a establecer límites sin renunciar a tu criterio.
-          </p>
-        </div>
-
-        <div class="pressure-situations">
-
-          <div class="situation-item">
-            <span>01</span>
-            <div>
-              <b>El silencio del grupo</b>
-              <p>Nadie defiende a quien está siendo excluido.</p>
-            </div>
-            <span>↗</span>
-          </div>
-
-          <div class="situation-item">
-            <span>02</span>
-            <div>
-              <b>La necesidad de encajar</b>
-              <p>Modificar tu comportamiento para ser aceptado.</p>
-            </div>
-            <span>↗</span>
-          </div>
-
-          <div class="situation-item">
-            <span>03</span>
-            <div>
-              <b>El miedo a decir que no</b>
-              <p>Aceptar algo que realmente no quieres hacer.</p>
-            </div>
-            <span>↗</span>
-          </div>
-
+    <section class="intro-section section-pad">
+      <div class="section-kicker">01 — EMPECEMOS POR LO ESENCIAL</div>
+      <div class="intro-grid">
+        <h2>¿Y SI EL PROBLEMA NO FUERA <em>QUIÉN ERES,</em> SINO LO QUE LA SOCIEDAD ESPERA DE TI?</h2>
+        <div class="intro-copy">
+          <p>Vivimos rodeados de reglas, expectativas y opiniones sobre cómo deberíamos vestirnos, pensar, hablar y comportarnos. Algunas ayudan a convivir; otras limitan nuestra libertad y generan desigualdad.</p>
+          <p>Esta plataforma explora cómo los derechos humanos se relacionan con nuestra vida diaria y por qué la igualdad no debería ser un privilegio.</p>
+          <a href="#derechos" class="arrow-link">EMPEZAR A EXPLORAR <span>↗</span></a>
         </div>
       </div>
-
-      <div class="quote-band reveal">
-        <span>«</span>
-        <p>Que todos lo hagan no significa que tengas que hacerlo.</p>
-        <span>»</span>
-      </div>
-
     </section>
 
-
-    <!-- DERECHOS -->
-    <section class="rights-section section-padding" id="derechos">
-
-      <div class="section-heading reveal">
+    <section class="rights-section section-pad" id="derechos">
+      <div class="section-kicker">02 — LO QUE NOS CORRESPONDE</div>
+      <div class="section-heading">
         <div>
-          <span class="section-kicker">04 — CONÓCELOS. EJÉRCELOS.</span>
-          <h2>Tus derechos.<br><i>Sin asteriscos.</i></h2>
+          <p class="eyebrow">NO SON PREMIOS NI FAVORES</p>
+          <h2>LOS DERECHOS<br>NO SE <em>NEGOCIAN.</em></h2>
         </div>
-        <p>
-          No son premios ni privilegios. Son garantías que protegen
-          tu dignidad, libertad e integridad.
-        </p>
+        <p class="heading-description">Los derechos humanos son garantías que pertenecen a todas las personas por el simple hecho de ser humanas. Protegen nuestra dignidad, libertad e igualdad.</p>
       </div>
 
-      <div class="rights-intro reveal">
-        <span class="rights-big-number">06</span>
-        <div>
-          <h3>Derechos que debes conocer.</h3>
-          <p>
-            Explora cada tarjeta. Descubre qué protege cada derecho,
-            cómo se aplica en tu vida y qué ocurre cuando no se respeta.
-          </p>
-        </div>
+      <div class="definition-band">
+        <span class="definition-mark">“</span>
+        <p>No tienes que ganarte el derecho a ser tratado con dignidad.</p>
+        <span class="definition-source">PRINCIPIO FUNDAMENTAL</span>
       </div>
 
       <div class="rights-grid">
-
-        <article class="right-card reveal" tabindex="0">
-          <span class="right-index">01 / IGUALDAD</span>
-          <span class="right-symbol">≠</span>
-          <h3>Igualdad<br>y no discriminación</h3>
-          <p>Tu dignidad no depende de tus características personales.</p>
-          <div class="right-more">
-            Todas las personas deben recibir igual protección y
-            oportunidades, sin discriminación por su origen, apariencia,
-            sexo, idioma, condición económica u otras circunstancias.
-          </div>
-          <span class="right-hint">DESCUBRIR ↗</span>
+        <article class="right-card right-card-dark">
+          <span class="card-number">01</span><span class="card-symbol">◎</span>
+          <h3>Igualdad y no discriminación</h3>
+          <p>Todas las personas tienen los mismos derechos y deben recibir un trato digno, sin importar sus características o circunstancias.</p>
+          <div class="card-example"><b>EN LA VIDA REAL</b> No excluir a alguien de una actividad por su origen, apariencia o discapacidad.</div>
         </article>
-
-        <article class="right-card reveal" tabindex="0">
-          <span class="right-index">02 / IDENTIDAD</span>
-          <span class="right-symbol">✳</span>
-          <h3>Identidad<br>personal</h3>
-          <p>Tienes derecho a ser reconocido como una persona única.</p>
-          <div class="right-more">
-            El derecho a la identidad comprende elementos como el nombre,
-            la nacionalidad y otros aspectos que permiten reconocerte
-            como individuo.
-          </div>
-          <span class="right-hint">DESCUBRIR ↗</span>
-        </article>
-
-        <article class="right-card reveal" tabindex="0">
-          <span class="right-index">03 / INTEGRIDAD</span>
-          <span class="right-symbol">◇</span>
-          <h3>Integridad<br>personal</h3>
-          <p>Tu bienestar físico, psicológico y moral importa.</p>
-          <div class="right-more">
-            Protege a las personas frente a actos que dañen su integridad
-            física, psicológica o moral, y exige respeto a su dignidad.
-          </div>
-          <span class="right-hint">DESCUBRIR ↗</span>
-        </article>
-
-        <article class="right-card reveal" tabindex="0">
-          <span class="right-index">04 / EDUCACIÓN</span>
-          <span class="right-symbol">✎</span>
+        <article class="right-card right-card-cream">
+          <span class="card-number">02</span><span class="card-symbol">✳</span>
           <h3>Educación</h3>
-          <p>Aprender y desarrollarte es un derecho.</p>
-          <div class="right-more">
-            Toda persona tiene derecho a una educación que favorezca
-            su desarrollo integral y el respeto por los derechos humanos.
-          </div>
-          <span class="right-hint">DESCUBRIR ↗</span>
+          <p>Toda persona tiene derecho a acceder a una educación de calidad, sin discriminación y con oportunidades para desarrollar sus capacidades.</p>
+          <div class="card-example"><b>EN LA VIDA REAL</b> Poder aprender y participar sin recibir burlas o ser apartado.</div>
         </article>
-
-        <article class="right-card reveal" tabindex="0">
-          <span class="right-index">05 / EXPRESIÓN</span>
-          <span class="right-symbol">〃</span>
-          <h3>Libertad de<br>expresión</h3>
-          <p>Tu voz merece ser escuchada y respetada.</p>
-          <div class="right-more">
-            Puedes expresar tus opiniones y buscar o compartir información,
-            respetando los derechos y la reputación de los demás.
-          </div>
-          <span class="right-hint">DESCUBRIR ↗</span>
+        <article class="right-card right-card-cream">
+          <span class="card-number">03</span><span class="card-symbol">◌</span>
+          <h3>Identidad y libre desarrollo</h3>
+          <p>Podemos desarrollar nuestra personalidad, expresar nuestras ideas y construir nuestra identidad con respeto a los derechos de los demás.</p>
+          <div class="card-example"><b>EN LA VIDA REAL</b> No tener que fingir ser otra persona para ser aceptado.</div>
         </article>
-
-        <article class="right-card reveal" tabindex="0">
-          <span class="right-index">06 / PARTICIPACIÓN</span>
-          <span class="right-symbol">↗</span>
-          <h3>Participación</h3>
-          <p>Tienes derecho a opinar sobre los asuntos que te afectan.</p>
-          <div class="right-more">
-            Los adolescentes tienen derecho a expresar sus opiniones
-            y a que estas sean tomadas en cuenta de acuerdo con su edad
-            y madurez.
-          </div>
-          <span class="right-hint">DESCUBRIR ↗</span>
+        <article class="right-card right-card-dark">
+          <span class="card-number">04</span><span class="card-symbol">⌂</span>
+          <h3>Protección e integridad</h3>
+          <p>Tenemos derecho a vivir sin violencia, maltrato, abuso ni situaciones que dañen nuestra integridad física o psicológica.</p>
+          <div class="card-example"><b>EN LA VIDA REAL</b> Recibir protección cuando sufrimos acoso o intimidación.</div>
         </article>
+        <article class="right-card right-card-dark">
+          <span class="card-number">05</span><span class="card-symbol">↗</span>
+          <h3>Libertad de expresión</h3>
+          <p>Podemos expresar opiniones, buscar información y comunicar nuestras ideas de manera responsable.</p>
+          <div class="card-example"><b>EN LA VIDA REAL</b> Opinar en clase sin ser ridiculizado por pensar diferente.</div>
+        </article>
+        <article class="right-card right-card-cream">
+          <span class="card-number">06</span><span class="card-symbol">⌘</span>
+          <h3>Privacidad</h3>
+          <p>Nuestra vida personal, información y comunicaciones merecen respeto y protección.</p>
+          <div class="card-example"><b>EN LA VIDA REAL</b> No compartir fotografías o conversaciones de alguien sin su permiso.</div>
+        </article>
+      </div>
 
+      <div class="mini-fact">
+        <div class="mini-fact-big">30</div>
+        <div><b>ARTÍCULOS, UN MISMO PRINCIPIO.</b><p>La Declaración Universal de los Derechos Humanos contiene 30 artículos que reconocen derechos y libertades fundamentales para todas las personas.</p><a href="https://www.un.org/en/about-us/universal-declaration-of-human-rights" target="_blank" rel="noopener">Leer la Declaración Universal ↗</a></div>
       </div>
     </section>
 
-
-    <!-- MINI JUEGOS -->
-    <section class="games-section section-padding" id="experimenta">
-
-      <div class="section-heading reveal">
-        <div>
-          <span class="section-kicker">05 — AHORA TE TOCA A TI</span>
-          <h2>No memorices.<br><i>Ponlo en práctica.</i></h2>
+    <section class="adolescence-section section-pad">
+      <div class="section-kicker">03 — DERECHOS EN ESTA ETAPA DE LA VIDA</div>
+      <div class="adolescence-layout">
+        <div class="adolescence-title">
+          <p class="eyebrow">SER ADOLESCENTE NO SIGNIFICA TENER MENOS DERECHOS</p>
+          <h2>TU VOZ<br>TAMBIÉN <em>CUENTA.</em></h2>
+          <p>La Convención sobre los Derechos del Niño protege a toda persona menor de 18 años. Reconoce que niñas, niños y adolescentes deben ser escuchados y participar en las decisiones que les afectan.</p>
+          <a class="arrow-link" href="https://www.ohchr.org/en/instruments-mechanisms/instruments/convention-rights-child" target="_blank" rel="noopener">CONOCER LA CONVENCIÓN ↗</a>
         </div>
-        <p>
-          No hay respuestas automáticas. Cada reto te obliga a
-          analizar, justificar y pensar en las consecuencias.
-        </p>
+        <div class="adolescence-list">
+          <article><span>01</span><div><h3>Ser escuchado</h3><p>Tu opinión debe ser tomada en cuenta en asuntos que te afectan, considerando tu edad y madurez.</p></div><b>↗</b></article>
+          <article><span>02</span><div><h3>Estudiar y aprender</h3><p>Debes tener oportunidades de educación y un entorno que respete tu dignidad.</p></div><b>↗</b></article>
+          <article><span>03</span><div><h3>Vivir sin discriminación</h3><p>Ninguna característica personal justifica que te nieguen tus derechos.</p></div><b>↗</b></article>
+          <article><span>04</span><div><h3>Descansar y desarrollarte</h3><p>También tienes derecho al juego, al descanso, a la cultura y a desarrollar tus intereses.</p></div><b>↗</b></article>
+          <article><span>05</span><div><h3>Recibir protección</h3><p>Las personas adultas e instituciones tienen responsabilidades para protegerte frente a la violencia.</p></div><b>↗</b></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="reality-section section-pad" id="realidad">
+      <div class="section-kicker">04 — LOS DATOS TAMBIÉN HABLAN</div>
+      <div class="reality-heading">
+        <p class="eyebrow">NO ES UN PROBLEMA AISLADO</p>
+        <h2>LA REALIDAD<br>NO SIEMPRE <em>SE VE.</em></h2>
+        <p>Detrás de las cifras hay experiencias de estudiantes que enfrentan violencia, exclusión o situaciones que afectan su bienestar y sus oportunidades.</p>
+      </div>
+      <div class="stats-grid">
+        <article class="stat-card stat-featured">
+          <span class="stat-label">PERÚ · ADOLESCENTES DE 12 A 17 AÑOS</span>
+          <strong>43.1<small>%</small></strong>
+          <p>experimentó violencia entre pares durante los últimos 12 meses, según ENARES 2024.</p>
+          <span class="stat-foot">VIOLENCIA ENTRE PARES</span>
+        </article>
+        <article class="stat-card">
+          <span class="stat-label">PERÚ · ADOLESCENTES</span>
+          <strong>62.1<small>%</small></strong>
+          <p>había experimentado violencia psicológica y/o física por parte de sus pares alguna vez en su vida.</p>
+          <span class="stat-foot">EXPERIENCIA A LO LARGO DE LA VIDA</span>
+        </article>
+        <article class="stat-card">
+          <span class="stat-label">MUNDO · ESTUDIANTES</span>
+          <strong>1<small> de 3</small></strong>
+          <p>estudiantes reporta haber sufrido acoso escolar durante el último mes, según información difundida por UNESCO.</p>
+          <span class="stat-foot">ACOSO ESCOLAR</span>
+        </article>
+      </div>
+      <p class="stat-disclaimer">Importante: los porcentajes corresponden a poblaciones, preguntas y periodos de medición específicos. No deben compararse como si midieran exactamente lo mismo.</p>
+      <div class="source-panel">
+        <div><span class="eyebrow">FUENTES DE INFORMACIÓN</span><h3>Investiga más allá de un número.</h3></div>
+        <a href="https://www.unicef.org/peru/informes/crecer-sin-violencia" target="_blank" rel="noopener">UNICEF Perú — Crecer sin violencia ↗</a>
+        <a href="https://www.unesco.org/en/articles/safe-learn-and-thrive-ending-violence-and-through-education" target="_blank" rel="noopener">UNESCO — Violencia y educación ↗</a>
+      </div>
+    </section>
+
+    <section class="inequality-section section-pad" id="desigualdad">
+      <div class="section-kicker">05 — LO QUE NORMALIZAMOS TAMBIÉN IMPORTA</div>
+      <div class="inequality-top">
+        <div><p class="eyebrow">IDENTIFICA LO QUE HAY DETRÁS</p><h2>NO TODO LO<br>“NORMAL” ES <em>JUSTO.</em></h2></div>
+        <p>La desigualdad no siempre aparece como una prohibición evidente. A veces se esconde en bromas, expectativas, prejuicios y decisiones que parecen pequeñas.</p>
+      </div>
+      <div class="issue-list">
+        <article class="issue-item">
+          <div class="issue-index">01 / ESTEREOTIPOS</div>
+          <div class="issue-main"><h3>“Eso es de niñas” o “eso es de niños”.</h3><p>Son ideas generalizadas sobre cómo supuestamente deben actuar las personas según su género. Pueden limitar intereses, decisiones y oportunidades.</p><div class="issue-tags"><span>EXPECTATIVAS</span><span>ROLES DE GÉNERO</span><span>LIBERTAD</span></div></div>
+          <div class="issue-mark">↗</div>
+        </article>
+        <article class="issue-item">
+          <div class="issue-index">02 / DISCRIMINACIÓN</div>
+          <div class="issue-main"><h3>Tratar a alguien como si valiera menos.</h3><p>Ocurre cuando una persona recibe un trato desfavorable por características como su origen, discapacidad, apariencia, género u otras condiciones.</p><div class="issue-tags"><span>PREJUICIOS</span><span>EXCLUSIÓN</span><span>DESIGUALDAD</span></div></div>
+          <div class="issue-mark">↗</div>
+        </article>
+        <article class="issue-item">
+          <div class="issue-index">03 / PRESIÓN SOCIAL</div>
+          <div class="issue-main"><h3>Sentir que debes cambiar para encajar.</h3><p>La presión social puede influir en cómo nos vestimos, hablamos, pensamos o nos relacionamos. Nadie debería tener que abandonar su identidad para merecer respeto.</p><div class="issue-tags"><span>IDENTIDAD</span><span>ACEPTACIÓN</span><span>AUTOEXPRESIÓN</span></div></div>
+          <div class="issue-mark">↗</div>
+        </article>
+        <article class="issue-item">
+          <div class="issue-index">04 / ACOSO ESCOLAR</div>
+          <div class="issue-main"><h3>Cuando la violencia se convierte en rutina.</h3><p>El acoso escolar implica comportamientos agresivos repetidos y una desigualdad de poder. Puede ser físico, verbal, social o digital.</p><div class="issue-tags"><span>CONVIVENCIA</span><span>SEGURIDAD</span><span>PREVENCIÓN</span></div></div>
+          <div class="issue-mark">↗</div>
+        </article>
+        <article class="issue-item">
+          <div class="issue-index">05 / EXCLUSIÓN</div>
+          <div class="issue-main"><h3>Estar presente no significa pertenecer.</h3><p>Excluir a alguien de grupos, actividades o decisiones puede afectar su participación y reforzar barreras que deberían eliminarse.</p><div class="issue-tags"><span>PERTENENCIA</span><span>PARTICIPACIÓN</span><span>INCLUSIÓN</span></div></div>
+          <div class="issue-mark">↗</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="reflection-section">
+      <div class="reflection-inner">
+        <span class="reflection-label">UNA PREGUNTA INCÓMODA</span>
+        <h2>¿CUÁNTAS VECES<br>HEMOS CONFUNDIDO<br><em>POPULARIDAD</em><br>CON VALOR?</h2>
+        <p>La dignidad de una persona no depende de su apariencia, su grupo de amigos, sus notas, su dinero ni la aprobación de los demás.</p>
+      </div>
+    </section>
+
+    <section class="school-section section-pad">
+      <div class="section-kicker">06 — EN NUESTRO DÍA A DÍA</div>
+      <div class="school-heading"><h2>LA IGUALDAD<br>TAMBIÉN SE <em>APRENDE.</em></h2><p>Una escuela respetuosa no es aquella donde nunca existen conflictos, sino aquella donde se reconocen, se escuchan las distintas voces y se buscan soluciones justas.</p></div>
+      <div class="school-grid">
+        <article class="school-card"><span>01</span><h3>En el aula</h3><p>Distribuir responsabilidades sin asumir que algunas tareas corresponden a un género o grupo específico.</p></article>
+        <article class="school-card"><span>02</span><h3>En los grupos</h3><p>Evitar excluir a compañeros por su apariencia, amistades, forma de expresarse o habilidades.</p></article>
+        <article class="school-card"><span>03</span><h3>En internet</h3><p>No difundir rumores, humillar, publicar contenido privado ni participar en ataques digitales.</p></article>
+        <article class="school-card"><span>04</span><h3>En las decisiones</h3><p>Escuchar a quienes suelen quedarse fuera y permitir que todos participen en propuestas y acuerdos.</p></article>
+      </div>
+    </section>
+
+    <section class="action-section section-pad" id="actuar">
+      <div class="section-kicker">07 — PASAR DE LA INFORMACIÓN A LA ACCIÓN</div>
+      <div class="action-heading"><p class="eyebrow">NO BASTA CON SABER QUE ALGO ESTÁ MAL</p><h2>¿QUÉ PUEDES<br>HACER <em>AHORA?</em></h2></div>
+      <div class="action-steps">
+        <article><span class="step-number">01</span><div><h3>Reconoce</h3><p>Identifica qué derecho podría estar siendo vulnerado. Observa los hechos sin minimizar lo ocurrido.</p></div></article>
+        <article><span class="step-number">02</span><div><h3>Escucha</h3><p>Si alguien te cuenta una situación difícil, escucha sin burlarte, culpar ni difundir lo que te confió.</p></div></article>
+        <article><span class="step-number">03</span><div><h3>Busca apoyo</h3><p>Habla con una persona adulta de confianza, un tutor, docente o responsable de convivencia escolar.</p></div></article>
+        <article><span class="step-number">04</span><div><h3>Actúa con responsabilidad</h3><p>Si hay riesgo o violencia, pide ayuda a las personas e instituciones responsables. No enfrentes una situación peligrosa a solas.</p></div></article>
+        <article><span class="step-number">05</span><div><h3>Propón cambios</h3><p>Promueve acuerdos, actividades inclusivas y espacios donde las opiniones de los estudiantes sean tomadas en cuenta.</p></div></article>
+      </div>
+      <div class="peru-help">
+        <div><span class="eyebrow">RECURSOS EN PERÚ</span><h3>También puedes buscar orientación institucional.</h3><p>Si necesitas reportar una situación de violencia escolar, consulta los canales oficiales y pide apoyo a un adulto de confianza.</p></div>
+        <a href="https://www.siseve.pe/" target="_blank" rel="noopener">SíseVe — Reporte de violencia escolar ↗</a>
+        <a href="https://www.gob.pe/minedu" target="_blank" rel="noopener">Ministerio de Educación ↗</a>
+        <a href="https://www.gob.pe/mimp" target="_blank" rel="noopener">Ministerio de la Mujer y Poblaciones Vulnerables ↗</a>
+      </div>
+    </section>
+
+    <section class="participation-section section-pad">
+      <div class="section-kicker">08 — TU PARTICIPACIÓN IMPORTA</div>
+      <div class="participation-layout">
+        <div><p class="eyebrow">LA CIUDADANÍA NO EMPIEZA A LOS 18</p><h2>NO ERES<br>ESPECTADOR.<br><em>ERES PARTE.</em></h2></div>
+        <div class="participation-copy"><p>Participar significa involucrarse en las decisiones que afectan nuestra vida y comunidad. Las y los adolescentes también pueden organizarse, expresar ideas, dialogar y proponer soluciones.</p><ul><li>Participar en consejos estudiantiles y espacios de representación.</li><li>Presentar propuestas para mejorar la convivencia.</li><li>Organizar campañas y proyectos con objetivos concretos.</li><li>Informarse antes de opinar y respetar puntos de vista diferentes.</li><li>Exigir que las decisiones que les afectan consideren sus opiniones.</li></ul></div>
+      </div>
+      <div class="participation-quote">“La participación no es que te permitan hablar. Es que tu voz tenga la posibilidad de influir.”</div>
+    </section>
+
+    <section class="explore-section section-pad" id="explora">
+      <div class="section-kicker">09 — PON A PRUEBA LO QUE SABES</div>
+      <div class="explore-heading"><div><p class="eyebrow">APRENDE · RELACIONA · REFLEXIONA</p><h2>AHORA TE<br>TOCA <em>PENSAR.</em></h2></div><p>No se trata de memorizar definiciones. Se trata de reconocer cómo funcionan los derechos en situaciones reales.</p></div>
+
+      <div class="explore-tabs">
+        <button class="explore-tab active" data-tab="quiz">01 / Quiz</button>
+        <button class="explore-tab" data-tab="glossary">02 / Glosario</button>
+        <button class="explore-tab" data-tab="myths">03 / Mitos</button>
       </div>
 
-      <div class="game-tabs reveal">
-        <button class="game-tab active" data-game="dilemma">01. EL DILEMA</button>
-        <button class="game-tab" data-game="observer">02. DETRÁS DE LA BROMA</button>
-        <button class="game-tab" data-game="decision">03. EL EFECTO DOMINÓ</button>
+      <div class="explore-panel active" id="tab-quiz">
+        <div class="quiz-layout">
+          <div class="quiz-intro"><span class="eyebrow">CONOCIMIENTO EN ACCIÓN</span><h3>¿QUÉ TANTO<br>CONOCES TUS<br><em>DERECHOS?</em></h3><p>Responde, descubre la explicación y aprende algo nuevo en cada pregunta.</p><div class="quiz-counter" id="quizCounter">PREGUNTA 01 / 06</div></div>
+          <div class="quiz-box">
+            <div class="quiz-progress"><span id="quizProgress"></span></div>
+            <h3 id="quizQuestion">Cargando pregunta...</h3>
+            <div id="quizOptions" class="quiz-options"></div>
+            <div id="quizFeedback" class="quiz-feedback" aria-live="polite"></div>
+            <button id="quizNext" class="button button-dark" disabled>Siguiente pregunta →</button>
+          </div>
+        </div>
       </div>
 
-      <!-- JUEGO 1 -->
-      <div class="game-panel active" id="game-dilemma">
-
-        <div class="game-panel-heading">
-          <span>RETO 01 / AUTONOMÍA MORAL</span>
-          <span class="game-counter" id="dilemmaCounter">01 — 03</span>
+      <div class="explore-panel" id="tab-glossary">
+        <div class="glossary-grid">
+          <article><h3>Dignidad</h3><p>Valor inherente de cada persona, que exige respeto y un trato humano.</p></article>
+          <article><h3>Equidad</h3><p>Considerar distintas necesidades y barreras para que todas las personas puedan acceder a oportunidades justas.</p></article>
+          <article><h3>Igualdad</h3><p>Reconocimiento de que todas las personas tienen la misma dignidad y los mismos derechos.</p></article>
+          <article><h3>Estereotipo</h3><p>Idea simplificada y generalizada sobre las características de un grupo.</p></article>
+          <article><h3>Prejuicio</h3><p>Juicio previo sobre una persona o grupo sin conocer suficientemente los hechos.</p></article>
+          <article><h3>Discriminación</h3><p>Trato desfavorable que limita o vulnera derechos por una característica o condición.</p></article>
+          <article><h3>Inclusión</h3><p>Crear condiciones para que todas las personas puedan participar y pertenecer.</p></article>
+          <article><h3>Participación</h3><p>Intervenir, expresar opiniones e influir en decisiones que afectan a una comunidad.</p></article>
+          <article><h3>Estigma</h3><p>Marca social negativa que puede generar rechazo, exclusión o trato injusto.</p></article>
         </div>
+      </div>
 
-        <div class="game-layout">
-          <div class="game-story">
-            <span class="game-label">SITUACIÓN HIPOTÉTICA</span>
-            <h3 id="dilemmaTitle">La decisión incómoda.</h3>
-            <p id="dilemmaText">
-              Durante un trabajo grupal, tus compañeros deciden excluir
-              a una estudiante porque consideran que no aporta nada.
-              Tú sabes que no le dieron oportunidad de participar.
-              Cuando propones incluirla, te responden que no compliques
-              las cosas.
-            </p>
-            <div class="game-question" id="dilemmaQuestion">
-              ¿Cómo actuarías ante esta situación?
+      <div class="explore-panel" id="tab-myths">
+        <div class="myth-list">
+          <article><div><span>MITO 01</span><h3>“Los derechos se tienen que ganar”.</h3></div><p><b>REALIDAD:</b> Los derechos humanos pertenecen a todas las personas. No dependen de sus logros, popularidad o comportamiento.</p></article>
+          <article><div><span>MITO 02</span><h3>“Si era una broma, no puede ser discriminación”.</h3></div><p><b>REALIDAD:</b> Llamarlo broma no elimina el daño ni justifica una conducta discriminatoria.</p></article>
+          <article><div><span>MITO 03</span><h3>“Los adolescentes no pueden participar en decisiones importantes”.</h3></div><p><b>REALIDAD:</b> Tienen derecho a expresar su opinión y a que sea considerada en los asuntos que les afectan.</p></article>
+          <article><div><span>MITO 04</span><h3>“Tratar a todos exactamente igual siempre es justo”.</h3></div><p><b>REALIDAD:</b> A veces se necesitan apoyos o ajustes diferentes para que todos puedan ejercer sus derechos en condiciones justas.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="game-section section-pad" id="juego">
+      <div class="section-kicker">10 — EXPERIENCIA INTERACTIVA</div>
+      <div class="game-heading"><div><p class="eyebrow">NO HAY RESPUESTAS AUTOMÁTICAS</p><h2>CAMBIA LA<br>HISTORIA. <em>DECIDE.</em></h2></div><p>En cada misión te enfrentarás a situaciones inspiradas en problemas de convivencia. Analiza, decide y descubre las consecuencias de tus acciones.</p></div>
+      <div class="game-shell">
+        <div class="game-top"><span>FUERA DEL MOLDE / SIMULACIÓN 001</span><span id="gameStatus">MISIÓN 01 DISPONIBLE</span></div>
+        <div class="game-main">
+          <div class="game-sidebar"><span class="eyebrow light">TU PROGRESO</span><div class="game-level">LVL <strong id="playerLevel">01</strong></div><div class="xp-label"><span>EXPERIENCIA</span><span id="xpValue">0 XP</span></div><div class="xp-track"><span id="xpBar"></span></div><div class="mission-progress"><span>MISIONES COMPLETADAS</span><strong id="missionCount">0 / 3</strong></div><p>Las decisiones responsables pueden cambiar el resultado de una situación.</p></div>
+          <div class="game-world">
+            <div class="world-decoration">01</div>
+            <span class="eyebrow">ELIGE TU MISIÓN</span>
+            <h3>¿QUÉ HARÍAS<br>EN SU <em>LUGAR?</em></h3>
+            <p id="worldMessage">Tres situaciones. Tres oportunidades para mirar más allá de lo evidente.</p>
+            <div class="mission-cards">
+              <button class="mission-card" data-mission="0"><span>01 / DECISIÓN</span><strong>El precio de encajar</strong><small>Exclusión · Respeto · Presión social</small><b>INICIAR ↗</b></button>
+              <button class="mission-card" data-mission="1"><span>02 / INVESTIGACIÓN</span><strong>Lo que no se cuenta</strong><small>Evidencia · Perspectiva · Justicia</small><b>INICIAR ↗</b></button>
+              <button class="mission-card" data-mission="2"><span>03 / ESTRATEGIA</span><strong>Cambiar las reglas</strong><small>Participación · Soluciones · Comunidad</small><b>INICIAR ↗</b></button>
             </div>
           </div>
-
-          <div class="game-choices" id="dilemmaChoices"></div>
         </div>
-
-        <div class="game-feedback" id="dilemmaFeedback" aria-live="polite"></div>
-        <button class="button-primary next-game-btn" id="nextDilemma" hidden>
-          SIGUIENTE SITUACIÓN ↗
-        </button>
-
+        <div class="game-footer"><span>APRENDE A OBSERVAR. ATRÉVETE A CUESTIONAR.</span><span>INTERACTIVE EXPERIENCE © 2026</span></div>
       </div>
-
-
-      <!-- JUEGO 2 -->
-      <div class="game-panel" id="game-observer">
-
-        <div class="game-panel-heading">
-          <span>RETO 02 / PENSAMIENTO CRÍTICO</span>
-          <span>ANÁLISIS DE SITUACIONES</span>
+      <div class="game-modal" id="gameModal" aria-hidden="true">
+        <div class="game-modal-card">
+          <button class="modal-close" id="closeGame" aria-label="Cerrar">×</button>
+          <span class="eyebrow" id="missionLabel">MISIÓN 01</span>
+          <h3 id="missionTitle">El precio de encajar</h3>
+          <p id="missionStory"></p>
+          <div id="missionChoices" class="mission-choices"></div>
+          <div id="missionFeedback" class="mission-feedback" aria-live="polite"></div>
+          <button class="button button-dark" id="missionContinue" disabled>Continuar →</button>
         </div>
-
-        <div class="observer-card">
-          <span class="game-label">EXPEDIENTE DE CONVIVENCIA</span>
-          <h3>Detrás de la broma.</h3>
-          <p>
-            En el salón, un grupo hace comentarios constantes sobre la
-            forma de hablar de un compañero. Cuando él expresa que le
-            molesta, le responden que no tiene sentido del humor.
-          </p>
-
-          <div class="observer-question">
-            <span>ANALIZA LA SITUACIÓN</span>
-            <h4>¿Qué elementos permiten reconocer que existe un problema?</h4>
-          </div>
-
-          <div class="observer-options" id="observerOptions">
-            <button class="observer-option" data-answer="a">
-              A. Que los comentarios se repitan y que se ignore el malestar expresado.
-            </button>
-            <button class="observer-option" data-answer="b">
-              B. Que todos los compañeros tengan sentido del humor diferente.
-            </button>
-            <button class="observer-option" data-answer="c">
-              C. Que la persona afectada debería aprender a aceptar cualquier broma.
-            </button>
-          </div>
-
-          <div id="observerFeedback" class="game-feedback"></div>
-
-          <button class="button-primary" id="observerReset">
-            VOLVER A INTENTAR ↻
-          </button>
-        </div>
-
       </div>
-
-
-      <!-- JUEGO 3 -->
-      <div class="game-panel" id="game-decision">
-
-        <div class="game-panel-heading">
-          <span>RETO 03 / CONSECUENCIAS</span>
-          <span>EL EFECTO DOMINÓ</span>
-        </div>
-
-        <div class="domino-layout">
-          <div>
-            <span class="game-label">UNA DECISIÓN PUEDE CAMBIARLO TODO</span>
-            <h3>La historia continúa según lo que decidas.</h3>
-            <p id="dominoStory">
-              Descubres que están difundiendo una imagen de un compañero
-              para burlarse de él. En el grupo de chat, todos reaccionan
-              con emojis y comentarios. Tú recibes el mensaje.
-            </p>
-            <div class="game-question" id="dominoQuestion">
-              ¿Cuál sería tu primera acción?
-            </div>
-          </div>
-
-          <div class="domino-options" id="dominoOptions">
-            <button data-path="share">Compartirla con otros amigos.</button>
-            <button data-path="ignore">No participar y no hacer nada más.</button>
-            <button data-path="support">No difundirla, apoyar al compañero y buscar ayuda si es necesario.</button>
-          </div>
-        </div>
-
-        <div id="dominoFeedback" class="game-feedback"></div>
-        <button class="button-primary" id="dominoReset">REINICIAR HISTORIA ↻</button>
-
-      </div>
-
-      <div class="games-disclaimer">
-        <span>✳</span>
-        No se trata de adivinar una respuesta perfecta. Se trata de
-        comprender las razones, los derechos involucrados y las
-        consecuencias de nuestras decisiones.
-      </div>
-
-    </section>
-
-
-    <!-- REFLEXIÓN -->
-    <section class="reflection-section section-padding" id="reflexiona">
-
-      <div class="reflection-header reveal">
-        <span class="section-kicker">06 — UNA PAUSA PARA PENSAR</span>
-        <h2>¿Qué harías si<br><i>nadie te juzgara?</i></h2>
-        <p>
-          No todas las respuestas tienen que compartirse.
-          Algunas merecen ser pensadas primero.
-        </p>
-      </div>
-
-      <div class="reflection-card reveal">
-
-        <div class="reflection-top">
-          <span>DIARIO DE REFLEXIÓN</span>
-          <span>01 / TU ESPACIO</span>
-        </div>
-
-        <label for="reflectionInput">
-          Si mañana nadie pudiera juzgar tus decisiones,
-          ¿qué harías de manera diferente y por qué?
-        </label>
-
-        <textarea
-          id="reflectionInput"
-          placeholder="Tómate tu tiempo. No hay una respuesta predeterminada..."
-          maxlength="800"
-        ></textarea>
-
-        <div class="reflection-bottom">
-          <span id="characterCount">0 / 800</span>
-          <button id="saveReflection" class="button-primary">
-            GUARDAR REFLEXIÓN ↗
-          </button>
-        </div>
-
-        <p class="privacy-note">
-          Tu reflexión se guarda únicamente en este dispositivo.
-          No se envía a ninguna persona.
-        </p>
-
-        <div id="reflectionMessage" class="reflection-message"></div>
-      </div>
-
-    </section>
-
-
-    <!-- COMPROMISO -->
-    <section class="commitment-section">
-      <span class="section-kicker">07 — ELIGE CON INTENCIÓN</span>
-      <h2>No puedes controlar<br>lo que todos hacen.<br><i>Sí puedes elegir lo que tú haces.</i></h2>
-
-      <p>Selecciona una acción que quieras poner en práctica.</p>
-
-      <div class="commitment-options">
-        <button class="commitment-option">
-          Escuchar antes de juzgar.
-        </button>
-        <button class="commitment-option">
-          No participar en situaciones discriminatorias.
-        </button>
-        <button class="commitment-option">
-          Defender el respeto, incluso si soy minoría.
-        </button>
-        <button class="commitment-option">
-          Aprender a expresar mis desacuerdos.
-        </button>
-      </div>
-
-      <div id="commitmentResult" class="commitment-result"></div>
-    </section>
-
-
-    <!-- FUENTES -->
-    <section class="sources-section section-padding" id="fuentes">
-      <span class="section-kicker">08 — CONOCER TAMBIÉN ES INFORMARSE</span>
-      <h2>Las ideas importan.<br><i>Las fuentes también.</i></h2>
-
-      <div class="sources-list">
-        <a href="https://www.unicef.org/es/convencion-derechos-nino" target="_blank" rel="noopener">
-          <span>01</span>
-          <div>
-            <b>UNICEF</b>
-            <p>Convención sobre los Derechos del Niño.</p>
-          </div>
-          <span>↗</span>
-        </a>
-
-        <a href="https://www.unesco.org/es" target="_blank" rel="noopener">
-          <span>02</span>
-          <div>
-            <b>UNESCO</b>
-            <p>Educación, inclusión y convivencia.</p>
-          </div>
-          <span>↗</span>
-        </a>
-
-        <a href="https://www.defensoria.gob.pe/" target="_blank" rel="noopener">
-          <span>03</span>
-          <div>
-            <b>Defensoría del Pueblo del Perú</b>
-            <p>Protección y promoción de los derechos.</p>
-          </div>
-          <span>↗</span>
-        </a>
-
-        <a href="https://www.ohchr.org/es" target="_blank" rel="noopener">
-          <span>04</span>
-          <div>
-            <b>ONU Derechos Humanos</b>
-            <p>Estándares internacionales de derechos humanos.</p>
-          </div>
-          <span>↗</span>
-        </a>
+      <div class="game-ending" id="gameEnding">
+        <span class="eyebrow">SIMULACIÓN COMPLETADA</span>
+        <h3>NO SOLO<br>JUGASTE. <em>REFLEXIONASTE.</em></h3>
+        <p>Las decisiones individuales importan, pero los cambios duraderos también necesitan acuerdos, participación y responsabilidad colectiva.</p>
+        <strong id="finalScore">0 XP</strong>
+        <button class="button button-light" id="restartGame">Volver a explorar ↻</button>
       </div>
     </section>
 
-
-    <!-- QR -->
-    <section class="qr-section section-padding" id="compartir">
-      <div class="qr-text">
-        <span class="section-kicker">COMPARTE LA EXPERIENCIA</span>
-        <h2>Una idea puede<br>llegar <i>más lejos.</i></h2>
-        <p>
-          Escanea el código desde otro dispositivo para explorar
-          FUERA DEL MOLDE.
-        </p>
-        <span class="qr-status" id="qrStatus">Preparando código QR...</span>
-      </div>
-
-      <div class="qr-card">
-        <div id="qrcode"></div>
-        <span>SCAN TO EXPLORE ↗</span>
-      </div>
+    <section class="final-section">
+      <div class="final-content"><span class="eyebrow light">UNA ÚLTIMA IDEA</span><h2>NO NECESITAS<br>ENCajar EN EL<br>MUNDO. <em>PUEDES</em><br>CUESTIONARLO.</h2><p>Una sociedad más justa no se construye cuando todos pensamos igual, sino cuando todas las personas pueden vivir con dignidad, expresarse y participar.</p><a href="#inicio" class="button button-light">Volver al inicio ↑</a></div>
+      <div class="final-graphic">FDM<span>001</span></div>
     </section>
-
   </main>
 
-
-  <!-- FOOTER -->
   <footer class="footer">
-    <div class="footer-main">
-      <a href="#inicio" class="logo footer-logo">
-        <span class="logo-symbol">F.</span>
-        <span>FUERA DEL <b>MOLDE.</b></span>
-      </a>
-      <p>Piensa. Cuestiona. Decide.</p>
-    </div>
-
-    <div class="footer-bottom">
-      <span>PROYECTO DE DPCC — 2026</span>
-      <a href="#inicio">VOLVER ARRIBA ↑</a>
-      <span>HECHO PARA PENSAR DIFERENTE.</span>
-    </div>
+    <a class="brand footer-brand" href="#inicio">FUERA<span>DEL</span>MOLDE<span class="brand-dot">.</span></a>
+    <p>INFORMARSE ES EL COMIENZO. PARTICIPAR ES EL SIGUIENTE PASO.</p>
+    <span>PROYECTO EDUCATIVO · 2026</span>
   </footer>
-
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
   <script src="js/script.js"></script>
-
 </body>
 </html>
